@@ -1,0 +1,79 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    flex: 1 1 calc(33.333% - 1rem); /* 3 colonnes */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsive Design */
+
+/* Tablette (768px) */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    section {
+        flex: 1 1 100%; /* Une seule colonne sur tablette */
+    }
+}
+
+/* Téléphone (480px) */
+@media (max-width: 480px) {
+    header {
+        text-align: left;
+        padding: 1rem;
+    }
+
+    nav ul li {
+        margin-bottom: 5px;
+    }
+
+    section {
+        margin-bottom: 1rem;
+    }
+}
+
+
