@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suivi des Stats - Basket</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Suivi des statistiques des joueurs</h1>
+    </header>
+    
+    <section id="inputs">
+        <div class="input-group">
+            <label for="clubTeam">Équipe du club : </label>
+            <input type="text" id="clubTeam" placeholder="Nom de l'équipe">
+        </div>
+        <div class="input-group">
+            <label for="opponentTeam">Équipe adverse : </label>
+            <input type="text" id="opponentTeam" placeholder="Nom de l'équipe">
+        </div>
+    </section>
+
+    <section id="table-section">
+        <table id="statsTable">
+            <thead>
+                <tr>
+                    <th>Nom du joueur</th>
+                    <th>Points</th>
+                    <th>Rebonds</th>
+                    <th>Passes décisives</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <button id="addPlayer">Ajouter un joueur</button>
+    </section>
+
+    <section id="export-section">
+        <button id="exportCSV">Exporter au format CSV</button>
+        <button id="exportPDF">Exporter au format PDF</button>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
