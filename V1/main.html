@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suivi des statistiques des joueurs</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Suivi des statistiques des joueurs</h1>
+        </div>
+        <div class="input-section">
+            <div class="input-club-team">
+                <label for="club-team">Équipe du club :</label>
+                <input type="text" id="club-team" placeholder="Nom de l'équipe">
+            </div>
+            <div class="input-opponent-team">
+                <label for="opponent-team">Équipe adverse :</label>
+                <input type="text" id="opponent-team" placeholder="Nom de l'équipe">
+            </div>
+        </div>
+        <div class="table-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Points</th>
+                        <th>Bounce</th>
+                        <th>Passes D</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="player-stats">
+                    <!-- Les lignes de joueurs seront insérées ici -->
+                </tbody>
+            </table>
+            <button class="add-player" id="addPlayer">Ajouter un joueur</button>
+        </div>
+        <div class="export-section">
+            <button class="export-csv">Exporter au format CSV</button>
+            <button class="export-pdf">Exporter au format PDF</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

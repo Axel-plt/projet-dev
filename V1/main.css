@@ -1,0 +1,171 @@
+/* Style général */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('./image/fond-basketball.jfif');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.85); /* Semi-transparent */
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 900px;
+}
+
+.header h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.input-section label {
+    font-size: 1rem;
+    margin-right: 10px;
+    color: #333;
+}
+
+.input-section input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+.input-club-team, .input-opponent-team {
+    font-weight: bold;
+}
+
+input.player-input, input.player-stat{
+    width: 100%; 
+    max-width: 300px;
+    padding: 8px; 
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+.table-section {
+    margin-top: 20px;
+    overflow-x: auto; 
+    margin: 0 auto;  
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 14px;
+}
+
+table th {
+    background: #333;
+    color: #fff;
+}
+
+.add-player {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 2.5%;
+}
+
+.add-player:hover {
+    background-color: #218838;
+}
+
+.delete-btn-danger{
+    background-color: red;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;   
+    font-weight: bold;
+}
+
+.export-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.export-csv, .export-pdf {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;  
+}
+
+.export-csv {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.export-csv:hover {
+    background-color: #0056b3;
+}
+
+.export-pdf {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.export-pdf:hover {
+    background-color: #c82333;
+}
+
+/* Cacher les colonnes moins importantes sur petits écrans */
+@media screen and (max-width: 768px) {
+  
+    /* Réduire la taille du bouton "Supprimer" */
+    table td button {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+    input.player-input, input.player-stat{
+        max-width: 100%; /* Utilise toute la largeur sur petit écran */
+        font-size: 14px; /* Réduit légèrement la taille du texte */
+    }
+}
+
+/* Design compact pour très petits écrans */
+@media screen and (max-width: 480px) {
+    table th, table td {
+        font-size: 12px; /* Encore plus petit */
+    }
+}
