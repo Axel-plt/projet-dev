@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const createPlayerRow = () => {
         const row = document.createElement("tr");
         row.innerHTML = `
-            <td><input type="text" placeholder="Nom" class="player-input"></td>
+            <td><input type="text" placeholder="N°" class="player-input"></td>
             <td><input type="number" value="0" min="0" step="1" class="player-stat"></td>
             <td><input type="number" value="0" min="0" step="1" class="player-stat"></td>
             <td><input type="number" value="0" min="0" step="1" class="player-stat"></td>
